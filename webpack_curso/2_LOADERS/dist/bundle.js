@@ -16,7 +16,7 @@
   \************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".main-title {\\r\\n    background-color: red;\\r\\n    color: black;\\r\\n    text-align: center;\\r\\n    border-bottom: 2px solid blue;\\r\\n    padding: 20px;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://2_LOADERS/./src/components/title.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".main-title {\\n    background-color: red;\\n    color: black;\\n    text-align: center;\\n    border-bottom: 2px solid blue;\\n    padding: 20px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://2_LOADERS/./src/components/title.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://2_LOADERS/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./src/img/samurai.jpg":
+/*!*****************************!*\
+  !*** ./src/img/samurai.jpg ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"0de695a3251bdf471be9c8a0ca33fb40.jpg\");\n\n//# sourceURL=webpack://2_LOADERS/./src/img/samurai.jpg?");
 
 /***/ }),
 
@@ -80,13 +90,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(style, options, obj) {\n  
 
 /***/ }),
 
+/***/ "./src/components/image.js":
+/*!*********************************!*\
+  !*** ./src/components/image.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_samurai_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/samurai.jpg */ \"./src/img/samurai.jpg\");\n\n\n\nclass Image {\n    inserImage() {\n      const img = document.createElement('img');\n      \n      img.src = _img_samurai_jpg__WEBPACK_IMPORTED_MODULE_0__.default;\n\n      img.width = 200;\n      img.height = 200\n\n      document.body.appendChild(img);\n    }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Image);\n\n//# sourceURL=webpack://2_LOADERS/./src/components/image.js?");
+
+/***/ }),
+
 /***/ "./src/components/title.js":
 /*!*********************************!*\
   !*** ./src/components/title.js ***!
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _title_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./title.css */ \"./src/components/title.css\");\n\r\n\r\nclass Title {\r\n    create(title){\r\n        const h1 = document.createElement('h1');\r\n\r\n        h1.innerText = title;\r\n\r\n        h1.classList.add('main-title');\r\n\r\n        console.log('aga1', h1);\r\n\r\n        document.body.appendChild(h1);\r\n\r\n        //document.querySelector()\r\n\r\n        //body.appendChild(h1);\r\n\r\n        //console.log('boooody', body);\r\n    }\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Title);\n\n//# sourceURL=webpack://2_LOADERS/./src/components/title.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _title_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./title.css */ \"./src/components/title.css\");\n\n\nclass Title {\n    create(title){\n        const h1 = document.createElement('h1');\n\n        h1.innerText = title;\n\n        h1.classList.add('main-title');\n\n        console.log('aga1', h1);\n\n        document.body.appendChild(h1);\n\n        //document.querySelector()\n\n        //body.appendChild(h1);\n\n        //console.log('boooody', body);\n    }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Title);\n\n//# sourceURL=webpack://2_LOADERS/./src/components/title.js?");
 
 /***/ }),
 
@@ -96,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_title_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/title.js */ \"./src/components/title.js\");\n\r\n\r\nconst title = new _components_title_js__WEBPACK_IMPORTED_MODULE_0__.default();\r\n\r\ntitle.create(\"Primeira página\");\r\n\n\n//# sourceURL=webpack://2_LOADERS/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_title_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/title.js */ \"./src/components/title.js\");\n/* harmony import */ var _components_image_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/image.js */ \"./src/components/image.js\");\n\n\n\nconst title = new _components_title_js__WEBPACK_IMPORTED_MODULE_0__.default();\nconst image = new _components_image_js__WEBPACK_IMPORTED_MODULE_1__.default();\n\ntitle.create(\"Primeira página\");\nimage.inserImage();\n\n\n//# sourceURL=webpack://2_LOADERS/./src/index.js?");
 
 /***/ })
 
@@ -151,6 +171,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -165,6 +197,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
