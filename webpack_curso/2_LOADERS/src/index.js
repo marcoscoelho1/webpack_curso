@@ -3,6 +3,7 @@ import Image from './components/image.js';
 import Button from './components/button.js';
 import Warning from './templates/warning.html';
 import fraseTxt from './files/frase.txt';
+import descricao from './files/descricao.json';
 import './styles/index.scss';
 
 const title = new Title();
@@ -28,3 +29,6 @@ document.body.innerHTML += Warning;
 const frase = fraseTxt;
 console.log(frase);
 console.log(frase.toUpperCase());
+
+//import JSON
+console.log(descricao);
