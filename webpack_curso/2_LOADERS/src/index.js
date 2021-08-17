@@ -2,6 +2,7 @@ import Title from './components/title.js';
 import Image from './components/image.js';
 import Button from './components/button.js';
 import Warning from './templates/warning.html';
+import fraseTxt from './files/frase.txt';
 import './styles/index.scss';
 
 const title = new Title();
@@ -22,3 +23,8 @@ console.log(rest);
 
 //import de HTML
 document.body.innerHTML += Warning;
+
+//import aquivo de texto;
+const frase = fraseTxt;
+console.log(frase);
+console.log(frase.toUpperCase());
